@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penang Ho Jiak</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+
+<body id="intro">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Penang Ho Jiak</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="chooseCriteria.html">Choose Your Criteria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="listF&B.html">Recommended Food</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <br><br/>
+    <div class="container mt-3" id="background-plain-white">
+    <p class="text-center fs-3 fw-bold">Please Choose Your Criteria~</p><br>
+
+    <form id="myForm" action="listF&B.html">
+    <label for="exampleDataList" class="label-text">Types of F&B</label>
+    <select class="form-control" list="datalistOptions1" id="userInput1" required>
+          <option value="" selected disabled hidden>Require*</option>
+          <option value="Bar">Bar</option>
+          <option value="Cafe">Cafe</option>
+          <option value="Food Delivery Service">Food Delivery Service</option>
+          <option value="Restaurant">Restaurant</option>
+          <option value="Stall">Stall</option>
+    </select><br>
+
+        <label for="exampleDataList" class="label-text">Location</label>
+        <select class="form-control" list="datalistOptions2" id="userInput2" required>
+              <option value="" selected disabled hidden>Require*</option>
+              <option value="Bayan Lepas">Bayan Lepas</option>
+              <option value="George Town">George Town</option>
+        </select><br>
+
+
+        <label for="exampleDataList" class="label-text">Halal</label>
+        <select class="form-control" list="datalistOptions3" id="userInput3" required>
+              <option value="" selected disabled hidden>Require*</option>
+              <option value="TRUE">Yes</option>
+              <option value="FALSE">No</option>
+        </select><br>
+
+
+
+        <label for="exampleDataList" class="label-text">Vegetarian</label>
+        <select class="form-control" list="datalistOptions4" id="userInput4" required> 
+              <option value="" selected disabled hidden>Require*</option>
+              <option value="TRUE">Yes</option>
+              <option value="FALSE">No</option>
+        </select> <br>
+   
+          
+        <div class="d-grid gap-2 d-md-flex  justify-content-center">
+            <button type="reset" class="btn btn-lg btn-secondary" >Clear</button>
+            
+            <input type="submit"  class="btn btn-lg btn-success" id="criteriaBtn" value="Give Me A Recommendation" >
+        </div>
+        <br>
+        <p class="text-center">This machine data retrieve from Facebook F&B outlets page. </p>
+    </form>
+
+    </div>
+
+<script src="./js/main.js" type="module"></script>
+
+</body>
+</html>

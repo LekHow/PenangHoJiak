@@ -1,0 +1,30 @@
+#home-intro{
+    background-image : url("https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000");
+    background-repeat : no-repeat;
+    background-size: cover;
+    
+  }
+#home-margin{
+    /* margin:100px; */
+    background-color: #f0f8ffd6;
+    padding:50px 50px 20px 50px;
+}
+#intro{
+    background-image : url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?cs=srgb&dl=pexels-ella-olsson-1640777.jpg&fm=jpg");
+    background-repeat : no-repeat;
+    background-size: cover;
+  }
+#background-plain-white{
+    background-color: #f0f8ffd6;
+    padding:50px 50px 20px 50px;
+  }
+label{
+    color:black;
+    font-weight: normal;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+  }
+#btn{
+    color:black;
+  }
