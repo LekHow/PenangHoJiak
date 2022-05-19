@@ -100,7 +100,7 @@ function GetAllDataOnce(){
 
 function GetAllDataRealtime(){
     var defaultKey="Restaurant | Bayan Lepas | FALSE | FALSE";
-    const dbRef = query(ref(db,"fnbOutlets"), limitToLast(10), orderByChild("sortingKey"), equalTo(sortingKey1));
+    const dbRef = query(ref(db,"fnbOutlets"), limitToLast(10), orderByChild("sortingKey"), equalTo(defaultKey));
 
     onValue(dbRef,(snapshot)=>{
         var outlets =[];
