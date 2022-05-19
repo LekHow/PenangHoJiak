@@ -83,7 +83,7 @@ const firebaseConfig = {
     
 function GetAllDataOnce(){
     var defaultKey="Restaurant | Bayan Lepas | FALSE | FALSE";
-    const que = query(ref(db,"fnbOutlets"), limitToLast(10), orderByChild("sortingKey"), equalTo(sortingKey));
+    const que = query(ref(db,"fnbOutlets"), limitToLast(10), orderByChild("sortingKey"), equalTo(sortingKey1));
 
     get(que)
     .then((snapshot) =>{
@@ -100,7 +100,7 @@ function GetAllDataOnce(){
 
 function GetAllDataRealtime(){
     var defaultKey="Restaurant | Bayan Lepas | FALSE | FALSE";
-    const dbRef = query(ref(db,"fnbOutlets"), limitToLast(10), orderByChild("sortingKey"), equalTo(defaultKey));
+    const dbRef = query(ref(db,"fnbOutlets"), limitToLast(10), orderByChild("sortingKey"), equalTo(sortingKey1));
 
     onValue(dbRef,(snapshot)=>{
         var outlets =[];
