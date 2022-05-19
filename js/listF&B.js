@@ -44,7 +44,6 @@ function AddItemsToTable(name,shortform,types,contact,email,rest,star,starNum,pa
 }
 
    function AddAllItemsToTable(TheOutlets){
-    TheOutlets.reverse();
     stdNo = 0;
     tbody.innerHTML="";
     TheOutlets.forEach(element=> {
