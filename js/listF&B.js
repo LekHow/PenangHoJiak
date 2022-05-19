@@ -48,7 +48,7 @@ function AddItemsToTable(name,shortform,types,contact,email,rest,star,starNum,pa
     stdNo = 0;
     tbody.innerHTML="";
     TheOutlets.forEach(element=> {
-        AddItemsToTable(element.fnbName, element.shortForm, element.typesOfOutlets, 
+        AddItemsToTable(element.fnbName, element.shortForm, element.typesOfFoodServed, 
         element.contactNo, element.email, element.restDay, element.starRating, 
         element.reviewNo, element.pageLikesNo,element.sortingKey);
     });
